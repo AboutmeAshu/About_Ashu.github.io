@@ -1,0 +1,92 @@
+body{
+	font-family: "Sofia";
+	border-radius: 40px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	padding-top: 20px;
+	width: 80%;
+}
+
+form{
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+	border: 5px solid gray;
+	border-radius: 60px;
+	width: 70%;
+}
+.title{
+	width: 90%;
+	height: 10%;
+	background-image: url(https://images.wallpaperscraft.com/image/keyboard_backlight_red_136083_1280x720.jpg);
+	color: white;
+	font-size: 45px;
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+
+.content{
+	color: black;
+	font-size: 30px;
+}
+
+
+button{
+	padding: 10px;
+	color: white;
+	background-color: blue;
+	font-size: 30px;
+	font-weight: 10px;
+	border-radius: 10px;
+	top:40%;
+}
+
+footer{
+	color:white;
+	background-color: black;
+	font-size: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	border:3px solid gray;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.sugge{
+	width: 25%;
+	height: 30%;
+	font-size: 20px;
+	font-family: "Sofia";
+	position: absolute;
+	right: 25.5%;
+	
+
+}
+
+.name{
+	width: 30%;
+	height: 8%;
+	font-size: 20px;
+	font-family: "Sofia";
+}
+
+.lab{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+}
+
+hr{
+	width: 70%;
+	height: 2px;
+	background-color: gray;
+	}
+
+
+
+
