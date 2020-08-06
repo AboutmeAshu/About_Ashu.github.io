@@ -1,15 +1,27 @@
-<?php
-         $file_name= fopen("Data.txt","a");
+
+	<?php
 
          $name = $_POST['fullname'] ;
          $data = $_POST['forus'] ;
 
-         $data_to_write = "Name : ". $name . "  Message: " . $data ;
-         fwrite($file_name,"\n $data_to_write") ;
-         fclose($file_name);
-         echo "<h1><i> Thanks for your response... $name </i></h1>".PHP_EOL;
-         echo "<h1><i>Have a nice day..</i></h1>".PHP_EOL;
-         echo "<h1><i> STAY HOME</i></h1>".PHP_EOL;
-         echo "<h1><i> STAY SAFE...</i></h1>".PHP_EOL;
 
-?>
+	      $query01 = "INSERT INTO data_about VALUES ('$name','$data') ;" ;
+          $dns="mysql:host=localhost;dbname=test";
+          $username="root" ;
+          $password="";
+
+          try{
+          $db = new PDO($dns, $username, $password) ;
+          $statement01 = $db->prepare($query01);
+          $statement01->execute();
+          
+         echo"<h3>Thanks for your response...<strong>$name</strong><br/> Your response is recorded successfully...</h3>" ;
+         
+      }catch(Exception $e){
+      $error_msg = $e->getMessage() ;
+      echo "<h3>Error is: $error_msg</h3>" ;
+      }
+
+	?>
+
+
