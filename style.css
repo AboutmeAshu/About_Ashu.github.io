@@ -27,7 +27,7 @@
  
 button.college {
   width: 100%;
-  background-color: whitesmoke;
+  background-color: black;
   border: 4px solid red;
   border-radius: 20%;
   outline: none;
@@ -36,7 +36,7 @@ button.college {
   font-size: 30px;
   font-weight: bold;
   text-align:center; 
-  color: #333;
+  color: white;
   cursor: pointer;
   transition: background-color 0.2s linear;
   left: 30%;
@@ -55,7 +55,7 @@ button.college.is-open:after {
 }
  
 button.college:hover, button.college.is-open {
-  background-color: #ddd;
+  background-color: red;
 }
  
 .college-content {
