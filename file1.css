@@ -60,11 +60,12 @@
 }
 
 .data{
+  position: absolute;
+  right: 7px;
+  top: 25%;
   font-size: 30px;
   font-weight: 10px;
   font-family: initial;
-  float: right;
-  margin-top: 15%;
 }
 
 .data1{
